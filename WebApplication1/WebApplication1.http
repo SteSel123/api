@@ -1,0 +1,23 @@
+@WebApplication1_HostAddress = http://localhost:5068
+
+GET {{WebApplication1_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+GET {{WebApplication1_HostAddress}}/api/fridge
+Accept: application/json    ks
+
+###
+GET {{WebApplication1_HostAddress}}/fridge/getfridges
+Accept: application/json
+###
+POST {{WebApplication1_HostAddress}}/api/fridge/CreateFridge
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Updated Fridge",
+    "category": "Milk",
+    "quantity": 150,
+    "dateAdded": "2024-06-01T00:00:00"
+}
